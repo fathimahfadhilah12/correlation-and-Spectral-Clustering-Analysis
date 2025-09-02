@@ -1,0 +1,6 @@
+streamlit
+pyngrok
+scikit-learn
+pandas
+openpyxl
+streamlit-option-menu

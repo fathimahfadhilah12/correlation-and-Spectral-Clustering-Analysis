@@ -777,15 +777,3 @@ Original file is located at
 #             except Exception as e:
 #                 st.error(f"❌ Terjadi error saat memproses data: {e}")
 #
-
-import subprocess
-subprocess.run([
-    "ngrok",
-    "config",
-    "add-authtoken",
-    "2w7tzu4F7z7FY97gMXIlVIrPywM_4ofdSWDtbLssEUtPVJ5pc"
-])
-
-from pyngrok import ngrok
-public_url = ngrok.connect(8501)
-print("URL publiknya:", public_url)

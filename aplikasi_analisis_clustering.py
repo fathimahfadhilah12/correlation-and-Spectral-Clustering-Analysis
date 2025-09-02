@@ -74,14 +74,8 @@ Original file is located at
 # 
 #     if uploaded_file is not None:
 #         try:
-#             # Baca file sesuai ekstensi
-#             if uploaded_file.name.endswith('.csv'):
-#                 df = pd.read_csv(uploaded_file, dtype=str)
-#             elif uploaded_file.name.endswith('.xlsx'):
-#                 df = pd.read_excel(uploaded_file, engine='openpyxl', dtype=str)
-#             else:
-#                 st.error("Format file tidak dikenali.")
-#                 st.stop()
+#             # Baca file Excel dari repository
+#             df = pd.read_excel("Data Pengangguran_Prakerja.xlsx", engine='openpyxl', dtype=str))
 #             # Bersihkan nama kolom dari spasi
 #             df.columns = df.columns.str.strip()
 # 
